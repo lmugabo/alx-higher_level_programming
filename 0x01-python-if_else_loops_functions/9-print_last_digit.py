@@ -2,7 +2,11 @@
 
 
 def print_last_digit(number):
-        """Print the last digit of a number and return it."""
-            print(abs(number) % 10, end="")
-                return (abs(number) % 10)
-            
+        rem = number % 10
+        if number < 0:
+                rem = number % -10
+                if rem < 0:
+                        rem = -rem
+                        print("{}".format(rem), end="")
+                        return rem
+                
