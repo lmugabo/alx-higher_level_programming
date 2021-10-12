@@ -6,7 +6,8 @@ class BaseGeometry:
 
     """Base Geometry class that is empty"""
 
-def area(self):
+    def area(self):
         """Area function for geometry"""
 
-raise Exception("area() is not implemented")
+        raise Exception("area() is not implemented")
+    
