@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Documentation for a class instance checker"""
+"""
+class instance checker
+"""
 
 
 def is_same_class(obj, a_class):
@@ -7,8 +9,8 @@ def is_same_class(obj, a_class):
     Returns:
         True if object is an instance, False otherwise
     """
-
-if type(obj) == a_class:
-return True
-else:
-return False
+    if type(obj) == a_class:
+        return True
+    else:
+        return False
+    
