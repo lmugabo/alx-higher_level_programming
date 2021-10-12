@@ -5,13 +5,12 @@
 class BaseGeometry:
 
     """Base Geometry class that is empty"""
-
-def area(self):
+    def area(self):
         """Area function for geometry"""
 
-raise Exception("area() is not implemented")
+        raise Exception("area() is not implemented")
 
-def integer_validator(self, name, value):
+    def integer_validator(self, name, value):
         """Validates an integer value
         Args:
             name (str): the string name
@@ -21,40 +20,38 @@ def integer_validator(self, name, value):
             ValueError: if the value is less than or equal to 0
         """
 
-if type(value) != int:
-raise TypeError("{} must be an integer".format(name))
-if value <= 0:
-raise ValueError("{} must be greater than 0".format(name))
+        if type(value) != int:
+            raise TypeError("{} must be an integer".format(name))
+        if value <= 0:
+            raise ValueError("{} must be greater than 0".format(name))
 
 
-class Rectangle(BaseGeometry):
+        class Rectangle(BaseGeometry):
 
     """Rectangle class that inherits from BaseGeometry class"""
 
-def __init__(self, width, height):
+    def __init__(self, width, height):
         """Instantiation function
         Args:
             width (int): the width of the rectangle
             height (int): the height of the rectangle
         """
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
+        self.__width = width
+        self.__height = height
 
-self.integer_validator("width", width)
-self.integer_validator("height", height)
-self.__width = width
-self.__height = height
-
-def area(self):
+        def area(self):
         """Area function
         Returns:
             The area of the rectangle
         """
+        return self.__width * self.__height
 
-return self.__width * self.__height
-
-def __str__(self):
+    def __str__(self):
         """The function for use in print() and str()
         Returns:
             Specially formated string
         """
 
-return ("[Rectangle] {}/{}".format(self.__width, self.__height))
+        return ("[Rectangle] {}/{}".format(self.__width, self.__height))
