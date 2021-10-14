@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+"""
+print uppercase
+"""
 
 def uppercase(str):
         for ch in str:
@@ -8,4 +10,3 @@ def uppercase(str):
                         temp = chr(ord(ch) - (ord('a') - ord('A')))
                         print("{}".format(temp), end="")
                         print()
-                        
