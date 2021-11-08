@@ -19,6 +19,7 @@ class Square():
                 raise ValueError("size must be >= 0")
             else:
                 self.__size = size
+
         @property
         def size(self):
             """Retruns the current size of the object
@@ -28,6 +29,7 @@ class Square():
             size of the current object
             """
             return self.__size
+
         @size.setter
         def size(self, value):
             """Resets the size of the object with the value called
@@ -43,9 +45,6 @@ class Square():
                 raise valueError("size must be >= 0")
             else:
                 self.__size = value
+
         def area(self):
-                """Returns the area of the current square objects"
-                Returns:
-                   the area of the current square object
-                """
                 return self.__size ** 2
