@@ -27,6 +27,7 @@ class Square():
              The current size of the object
         """
         return self.__size
+
     @size.setter
     def size(self, value):
         """Resets the size with a new value passed in
