@@ -5,17 +5,6 @@
 class Square():
     """Square class for quadrilateral with four equal sides"""
     def __init__(self, size=0, position=(0, 0)):
-        """Sets the initial size and position of an instantiated object 
-        Throws an error when size is not integer or when position is not a 
-           tuple containing two integers
-        Args:
-          size (int, optional): the size of the square object
-          position (tuple, optional): the poition of the object when printed
-        Raises:
-          TypeError: when the value passed is not an nteger or a two integer
-          tuplet
-        ValueError: when the value passsed is less than 0
-        """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
