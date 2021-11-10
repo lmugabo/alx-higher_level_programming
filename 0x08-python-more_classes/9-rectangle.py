@@ -6,6 +6,7 @@ class Rectangle:
     """Class for a Rectangle shape"""
     print_symbol = "#"
     number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         if type(width) is not int:
             raise TypeError("width must be an integer")
@@ -132,4 +133,3 @@ class Rectangle:
             size (int, optional): the size of the square instance
         """
         return cls(size, size)
-

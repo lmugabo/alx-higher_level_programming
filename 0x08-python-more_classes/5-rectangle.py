@@ -4,6 +4,7 @@
 
 class Rectangle:
     """Class for a Rectangle shape"""
+
     def __init__(self, width=0, height=0):
         """Instantiation of a rectangle
         Args:
@@ -90,7 +91,7 @@ class Rectangle:
                 rectangle.append('#')
             if i is not self.__height - 1:
                 rectangle.append('\n')
-        return''.join(rectangle)
+            return''.join(rectangle)
 
     def __repr__(self):
         """Creates a string that works with the eval() function"""
