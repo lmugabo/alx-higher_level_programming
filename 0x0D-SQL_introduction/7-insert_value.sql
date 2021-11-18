@@ -1,2 +1,2 @@
 --Inserting values
-INSERT INTO first_table VALUES(89, 'Best School')
+INSERT INTO first_table VALUES(89, 'Best School');
