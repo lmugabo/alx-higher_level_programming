@@ -1,2 +1,2 @@
---Update score of Bob in table
+-- Update State
 UPDATE second_table SET score=10 WHERE name="Bob";
